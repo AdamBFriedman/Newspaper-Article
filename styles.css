@@ -354,7 +354,7 @@ aside > div > div {
   .sidebar .slack-ui {
     border-top: 0;
   }
-  .sidebar .pie {
+  .sidebar .coffee {
     -webkit-box-ordinal-group: 4;
         -ms-flex-order: 3;
             order: 3;
@@ -469,13 +469,13 @@ aside > div > div {
      object-position: right;
 }
 
-.pie {
+.coffee {
   line-height: 0;
   color: var(--gray);
   text-align: left;
 }
 
-.pie__image {
+.coffee__image {
   margin: 0;
   border: 0;
   max-height: 15rem;
@@ -483,7 +483,7 @@ aside > div > div {
      object-fit: cover;
 }
 
-.pie__subtitle {
+.coffee__subtitle {
   background: #999;
   text-transform: uppercase;
   line-height: 1;
@@ -492,13 +492,13 @@ aside > div > div {
   color: var(--gray);
 }
 
-.pie__content {
+.coffee__content {
   background: #666;
   padding: 1rem 1rem 1.2rem;
   color: var(--gray);
 }
 
-.pie__content p {
+.coffee__content p {
   margin-top: 0.5rem;
 }
 
