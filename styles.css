@@ -164,7 +164,7 @@ main aside {
   }
 }
 
-main .social {
+main .poke {
   grid-column: 1 / -2;
   -ms-grid-row: 8;
   -ms-grid-row-span: 1;
