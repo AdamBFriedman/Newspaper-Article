@@ -351,7 +351,7 @@ aside > div > div {
     margin: 1.5rem 0;
     padding: 0;
   }
-  .sidebar .slack-ui {
+  .sidebar .snake {
     border-top: 0;
   }
   .sidebar .coffee {
@@ -574,5 +574,172 @@ aside > div > div {
      object-fit: cover;
   -o-object-position: left;
      object-position: left;
+}
+
+.cssgrid-collection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: stretch;
+      align-content: stretch;
+  border-top: 1px solid;
+  padding-top: 1rem;
+}
+
+.cssgrid-collection h4 {
+  margin: 0 0 0.8rem;
+}
+
+.cssgrid-collection__image {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 32%;
+          flex: 0 0 32%;
+  margin-right: 1.5rem;
+}
+
+.cssgrid-collection img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: left;
+     object-position: left;
+}
+
+.cssgrid-collection p a {
+  border-bottom: 1px dashed;
+}
+
+.cssgrid-collection p a:hover {
+  border-bottom: 1px solid;
+}
+
+@media (min-width: 1024px) {
+  .meme {
+    margin-top: 0;
+  }
+}
+
+.dog {
+  border: 2px solid transparent;
+  outline: 3px solid var(--black);
+  -webkit-box-shadow: inset 0 0 0 1px var(--black);
+          box-shadow: inset 0 0 0 1px var(--black);
+  width: calc(100% - 4px);
+  margin: 3rem auto 0.2rem;
+}
+
+.dog__image {
+  padding: 2px;
+}
+
+.dog__image img {
+  height: 16rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: left;
+     object-position: left;
+  border: none;
+}
+
+@media (min-width: 1024px) {
+  .dog__image img {
+    height: 25rem;
+  }
+}
+
+.dog__blurb {
+  font: 22px/1.1 var(--font-sans-serif);
+  text-align: center;
+  padding: 0.5rem;
+  color: var(--black);
+  margin: -1rem 0.5rem 0.3rem;
+}
+
+.dog__title {
+  font: 18px/1.1 var(--font-sans-serif);
+  text-transform: uppercase;
+  text-align: center;
+  padding: 1rem;
+  background: var(--black);
+  color: var(--gray);
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+
+.poke {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 3fr;
+      grid-template-columns: 1fr 3fr;
+  -ms-grid-rows: max-content auto;
+      grid-template-rows: -webkit-max-content auto;
+      grid-template-rows: max-content auto;
+  color: var(--gray);
+  text-align: left;
+}
+
+.poke__image {
+  margin: 0;
+  border: 0;
+  grid-row: span 2;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.poke__subtitle {
+  background: #999;
+  text-transform: uppercase;
+  line-height: 1;
+  padding: 0.4rem 1rem;
+  color: var(--gray);
+  font: 14px var(--font-sans-serif);
+}
+
+.poke__content {
+  background: #666;
+  padding: 1rem;
+  color: var(--gray);
+  -ms-grid-column: 2;
+  grid-column: 2;
+}
+
+.hotel {
+  padding-bottom: 1rem;
+}
+
+@media (min-width: 700px) and (max-width: 1024px) {
+  .hotel {
+    grid-column: span 3;
+    margin: 0 0 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hotel {
+    border-bottom: 1px solid;
+  }
+}
+
+.coffee:hover img,
+.poke:hover img,
+.playtable:hover img,
+.covid:hover img,
+.hotel:hover img,
+.pixel:hover img,
+.dog:hover img,
+.cssgrid-collection__image:hover img {
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+}
+
+.dog:hover .dog__title {
+  background: transparent;
+  color: var(--black);
+}
+
+.dapper:hover .dapper__title {
+  background: transparent;
+  color: var(--black);
 }
 /*# sourceMappingURL=styles.css.map */
