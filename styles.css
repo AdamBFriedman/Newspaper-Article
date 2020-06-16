@@ -190,7 +190,7 @@ main .article-bar-1 {
 }
 
 @media (min-width: 700px) {
-  main .menu {
+  main .playtable {
     grid-column: 1 / -1;
     -ms-grid-row: 13;
     grid-row: 13;
@@ -198,7 +198,7 @@ main .article-bar-1 {
 }
 
 @media (min-width: 1024px) {
-  main .menu {
+  main .playtable {
     -ms-grid-row: 7;
     -ms-grid-row-span: 1;
     grid-row: 7 / 8;
@@ -445,5 +445,134 @@ aside > div > div {
   line-height: 0.9;
   -webkit-transform: rotate(-5deg);
           transform: rotate(-5deg);
+}
+
+.covid {
+  margin: 1.5rem 0;
+}
+
+@media (min-width: 700px) {
+  .covid {
+    margin: 0 0 1.5rem;
+  }
+}
+
+.covid figure {
+  height: 100%;
+}
+
+.covid img {
+  height: 96%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: right;
+     object-position: right;
+}
+
+.pie {
+  line-height: 0;
+  color: var(--gray);
+  text-align: left;
+}
+
+.pie__image {
+  margin: 0;
+  border: 0;
+  max-height: 15rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.pie__subtitle {
+  background: #999;
+  text-transform: uppercase;
+  line-height: 1;
+  padding: 0.4rem 1rem;
+  font: 14px var(--font-sans-serif);
+  color: var(--gray);
+}
+
+.pie__content {
+  background: #666;
+  padding: 1rem 1rem 1.2rem;
+  color: var(--gray);
+}
+
+.pie__content p {
+  margin-top: 0.5rem;
+}
+
+.sidebar-item {
+  margin: 2rem 0;
+  padding: 2rem 0 0;
+}
+
+.sidebar-item h5 {
+  text-align: center;
+  width: 100%;
+  padding: .5rem;
+  margin: auto;
+}
+
+.sidebar-item p {
+  margin-top: 1rem;
+}
+
+.sidebar-item:hover h5 {
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  background: var(--black);
+  color: #fff;
+}
+
+.item-with-image {
+  margin-top: 1.5rem;
+}
+
+.item-with-image h4 {
+  font-size: 24px;
+  text-align: left;
+  margin-bottom: 0.5rem;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+
+@media (min-width: 700px) {
+  .item-with-image {
+    margin: 0;
+  }
+}
+
+.item-with-image:not(.cssgrid-collection):hover h4 {
+  color: white !important;
+  background: var(--black);
+}
+
+.magazine {
+  border: 1px solid;
+  border-width: 1px 0;
+  padding-bottom: 1rem;
+}
+
+.playtable {
+  margin: 1.5rem 0;
+}
+
+@media (min-width: 1024px) {
+  .playtable {
+    margin: 0;
+  }
+}
+
+.playtable figure {
+  height: 100%;
+}
+
+.playtable img {
+  height: 90%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: left;
+     object-position: left;
 }
 /*# sourceMappingURL=styles.css.map */
