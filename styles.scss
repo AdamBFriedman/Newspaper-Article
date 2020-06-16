@@ -144,7 +144,7 @@ main {
 	.article-bar-1 {
 		grid-row: span 4;
 	}
-	.hogwarts {
+	.dapper {
 		@media (min-width: 700px) {
 			grid-row: span 3;
 		}
@@ -169,7 +169,7 @@ main {
 			grid-row: 10 / 13;
 		}
 	}
-	.plan {
+	.hotel {
 		@media (min-width: 700px) and (max-width: 1024px) {
 			grid-column: span 4;
 		}
@@ -215,4 +215,27 @@ img {
 figcaption {
 	font-style: italic;
 	font-size: 90%;
+}
+
+aside {
+	text-align: center;
+	padding: 3px 0;
+	border: solid var(--black);
+	border-width: 2px 0;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	margin: 1.5rem 0;
+	@media (min-width: 700px) {
+		margin: 0;
+	}
+	> div {
+		display: flex;
+		align-items: center;
+		border: solid var(--black);
+		border-width: 1px 0;
+		> div {
+			flex: 1;
+			padding: 8px;
+		}
+	}
 }
