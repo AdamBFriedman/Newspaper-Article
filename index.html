@@ -25,7 +25,7 @@
 				<aside>
 					<div>
 						<div class="issue">Issue #1</div>
-						<div class="date">Tuesday, June 16, 2020</div>
+						<div class="date"></div>
 						<div class="edition">Portfolio Edition</div>
 					</div>
 				</aside>
@@ -206,4 +206,18 @@
 			</main>
 		</div>
 	</body>
+	<script type="text/javascript">
+		const days = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+		const monthNames = ["January", "February", "March", "April", "May", "June",
+		"July", "August", "September", "October", "November", "December"
+		];
+		let date = new Date();
+		let year = date.getFullYear();
+		let month = monthNames[date.getMonth()];
+		let day = date.getDate();
+		let dayName = days[date.getDay()];
+		
+		let html = document.querySelector('.date');
+		html.innerHTML = `${dayName}, ${month} ${day}, ${year}`
+	</script>
 </html>
