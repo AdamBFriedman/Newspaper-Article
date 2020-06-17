@@ -2,9 +2,15 @@
   --font: "EB Garamond", serif;
   --font-title: "Playfair Display", serif;
   --font-sans-serif: "Manrope", sans-serif;
+  --font-header: "Canterbury", serif;
   --black: #1c1f33;
   --gray: #eee;
   --gray-1: #ededed;
+}
+
+@font-face {
+  font-family: 'Canterbury';
+  src: url("./Canterbury.woff") format("woff");
 }
 
 * {
@@ -22,6 +28,10 @@ body {
   line-height: 1.3;
   text-align: justify;
   column-break-inside: avoid;
+}
+
+.header {
+  font-family: var(--font-header);
 }
 
 a {
